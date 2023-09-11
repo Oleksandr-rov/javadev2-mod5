@@ -1,0 +1,25 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class App {
+    + main(String[] args)
+}
+
+class FibonacciIterative {
+    - {static} FibonacciIterative()
+    + fibonacci(int n): int
+}
+
+class FibonacciRecursive {
+    - {static} FibonacciIterative()
+    + fibonacci(int n): int
+}
+
+class FibonacciDynamic {
+    -{static} memo : HashMap<Integer, Integer>
+    - {static}FibonacciDynamic()
+    + fibonacci(int number): int
+}
+
+
+@enduml
